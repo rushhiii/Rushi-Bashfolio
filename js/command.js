@@ -1,10 +1,25 @@
 var youtube = "https://www.youtube.com/";
 var twitter = "https://www.x.com/";
 var password = "whatdidyouthinkitwasbruh!";
-var linkedIn = "https://www.linkedin.com/in/joshuathadi/";
-var github = "https://github.com/JoshuaThadi/";
+var linkedIn = "https://www.linkedin.com/in/rushhiii/";
+var github = "https://github.com/rushhiii/";
 var gmail = "mailto:rushhiii.dev@gmail.com";
 var instagram = "https://www.instagram.com"; 
+
+// Get browser info for "Kernel"
+function getKernelInfo() {
+    return navigator.userAgent;
+}
+
+// Get uptime since page load
+const pageLoadTime = Date.now();
+function getUptime() {
+    const seconds = Math.floor((Date.now() - pageLoadTime) / 1000);
+    const days = Math.floor(seconds / (3600*24));
+    const hours = Math.floor((seconds % (3600*24)) / 3600);
+    const mins = Math.floor((seconds % 3600) / 60);
+    return `${days} day${days!==1?'s':''}; ${hours} hour${hours!==1?'s':''}; ${mins} min${mins!==1?'s':''}`;
+}
 
 whois = [
     "<a style='color: #ffffff'>Hey, I'm Rushi!",
@@ -45,10 +60,10 @@ projects = [
     "<a style='color: #ffffff'>Most of my github projects are hobby based the real-time heavy projects are confidential.</a>",
     "To proceed, type the command <span class='command'>socials</span>.",
     "<br>",
-    ' ✆ Whatsapp-Automation:                            - <a href="https://github.com/JoshuaThadi/Automations">https://github.com/JoshuaThadi/Automations</a>',
-    ' 𓃬 YehoArc:                                        - <a href="https://github.com/JoshuaThadi/Microsoft-.Net">https://github.com/JoshuaThadi/Microsoft-.Net</a>',
-    ' G Web-Development:                                - <a href="https://github.com/JoshuaThadi/Web-Development">https://github.com/JoshuaThadi/Web-Development</a>',
-    ' ⌨ Artifical Intelligence:                         - <a href="https://github.com/JoshuaThadi/Artificial-Intelligence">https://github.com/JoshuaThadi/Artificial-Intelligence</a>',
+    ' ✆ Whatsapp-Automation:                            - <a href="https://github.com/rushhiii/Automations">https://github.com/rushhiii/Automations</a>',
+    ' 𓃬 YehoArc:                                        - <a href="https://github.com/rushhiii/Microsoft-.Net">https://github.com/rushhiii/Microsoft-.Net</a>',
+    ' G Web-Development:                                - <a href="https://github.com/rushhiii/Web-Development">https://github.com/rushhiii/Web-Development</a>',
+    ' ⌨ Artifical Intelligence:                         - <a href="https://github.com/rushhiii/Artificial-Intelligence">https://github.com/rushhiii/Artificial-Intelligence</a>',
     "<br>"
 ];
 
@@ -90,9 +105,9 @@ banner = [
 ██╔══██╗ ██║   ██║ ╚════██║██╔══██║██║██╔═══╝ ██╔══██║   ██║   ██╔══╝  ██║     
 ██║  ██║ ╚██████╔╝ ███████║██║  ██║██║██║     ██║  ██║   ██║   ███████╗███████╗
 ╚═╝  ╚═╝  ╚═════╝  ╚══════╝╚═╝  ╚═╝╚═╝╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚══════╝
-                                                                           © 2025
+                                                                           © ${(new Date()).getFullYear()}
 =================================================================================
-<a style="color: #ffffff">System Information: Kernel: Linux 5.10.0; Uptime: 1 day; 2 hours; Shell: Bash 5.0</a>
+<a style="color: #ffffff">System Information: Kernel: ${getKernelInfo()}; Uptime: ${getUptime()}; Shell: Bash 5.0</a>
 =================================================================================
 <a style="color: #ffffff">WSL2 system v.19.04.2005 * All rights reserved!</a>
 =================================================================================
@@ -172,10 +187,10 @@ pubg = [
 ::::::::::::::::::::::::::::<a style='color: #ffffff'>?$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$+<a>::::::::::::::::::::        
 ::::::::::::::::::::::::;;;<a style='color: #ffffff'>+???%%#$$$$$$$$$$$$$$$$$$$$$$$$$$?<a>:::::::::::::::::::        
 :::::::::::::::::::::::<a style='color: #ffffff'>+##$$$###%?***?%#$$$$$$$$$$$$$$$$$$$$$#;<a>:::::::::::::::::        
-::::::::::::::::::<a style='color: #ffffff'>+?%###%%?????%#$$$$#%***?#$$$$$$$$$$$$$$$$$$$+<a>::::::::::::::::        
+::::::::::::::::::<a style='color: #ffffff'>+?%###%%?????%#$$$$#%***?#$$$$$$$$$$$$$$$$$+<a>::::::::::::::::        
 :::::::::::::::::<a style='color: #ffffff'>*$$#%%%%##$$$##%???%#$$$$%*+*%$$$$$$$$$$$$$$$$$;<a>:::::::::::::::        
 :::::::::::::::::<a style='color: #ffffff'>;$%+*+:::+;+??%#$$$#%???#$$$#*+*%$$$$$$$$$$$$$$#<a>:::::::::::::::        
-:::::::::::::::::<a style='color: #ffffff'>?#***;::+;;+******?#$$$#?**%$$$%*+?$$$$$$$$$$$$$+<a>::::::::::::::        
+:::::::::::::::::<a style='color: #ffffff'>?#***;::+;;+********+%$$$$$$%**#$$$?+*#$$$$$$$$$$%<a>::::::::::::::        
 :::::::::::::::<a style='color: #ffffff'>;*$?**+;:;;:+********+%$$$$$$%**#$$$?+*#$$$$$$$$$$%<a>::::::::::::::        
 ::::::::::::::<a style='color: #ffffff'>#$$$$$$$$##%???***+***?$$$$$#$$$##$$$$$#?*?$$$$$$$$$<a>::::::::::::::        
 ::::::::::::::<a style='color: #ffffff'>#$?;:;;++*%#$$$$$#%?**$$$$$$#$$$$$$$$$%%?%;#$$$$$$$$;<a>:::::::::::::        
@@ -183,7 +198,7 @@ pubg = [
 :::::::::::::::::<a style='color: #ffffff'>#$$$$$$$$$#%*+;;+?#$$$$$#$$$$$$$$%:;$$$$$$$$$$?+?:<a>:::::::::::::        
 ::::::::::::::::<a style='color: #ffffff'>?$$$$$$$$$$$$$$$#?+;;*#$$$$$$$$$$#:;$$$$$$$$$$$%+%<a>::::::::::::::        
 :::::::::::::::<a style='color: #ffffff'>?$$$$$$$$$$$$$$$$$$$$%*;;?$$$$$$$#;:#$$$$$$$$$$$$%+<a>::::::::::::::        
-:::::::::::::::<a style='color: #ffffff'>*$$+;+*%#$$$$$$$$$$$$$$$%+;*$$$$$;:#$$$$$$$$$$$$$$;<a>::::::::::::::        
+:::::::::::::::<a style='color: #ffffff'>*$$+;+*%#$$$$$$$$$$$$$#%+;*$$$$$;:#$$$$$$$$$$$$$$;<a>::::::::::::::        
 ::::::::::::::::<a style='color: #ffffff'>;?##%*+;++?%$$$$$$$$$$$$$##$$$$+:;%$$$$$$$$$$$$$;<a>:::::::::::::::        
 :::::::::::::::::::<a style='color: #ffffff'>;+?%%%+:::;*%$$$$$$$$$$$$$$*:::::+?%$$$$$$$?;<a>::::::::::::::::        
 :::::::::::::::::::::::::::::::::<a style='color: #ffffff'>;*%$$$$$$$$$*::::::::::;+++;<a>:::::::::::::::::::        
@@ -244,8 +259,7 @@ heaven = [
  _I__|  ||__|__|__|_||          A          ||_|__|__|__||- |__I_
  -|--|- ||--|--|--|-||       __/_\__  *    ||-|--|--|--||= |--|-
   |  |  ||  |  |  | ||      /\-'o'-/\      || |  |  |  ||  |  |
-  |  |= ||  |  |  | ||     _||:<_>:||_     || |  |  |  ||= |  |
-  |  |- ||  |  |  | || *  /\_/=====\_/\  * || |  |  |  ||= |  |
+  |  |= ||  |  |  | || *  /\_/=====\_/\  * || |  |  |  ||= |  |
   |  |- ||  |  |  | ||  __|:_:_[I]_:_:|__  || |  |  |  ||- |  | 
  _|__|  ||__|__|__|_||:::::::::::::::::::::||_|__|__|__||  |__|_
  -|--|= ||--|--|--|-||:::::::::::::::::::::||-|--|--|--||- |--|-
@@ -383,6 +397,7 @@ d888888888888888b.                      d88888888888888888b    88888888888888888
 88P'  _|  |'_ 'Y88      .ood88888b.    88888888""""'Y8888888b  88P' =,  \  =- 'Y88
 88P  '-'   '-'' 'Y8     d88888888888b.  888P  ' ,=-   'Y8888"Y  88P'      '     888
 888             Y8    d88888888888888b  Y/ _ '.       |888p 8  88     _-_      P \
+| Y     '"'      8\  d888888P""""""Y88b \ /"|          Y - .8  |Y     ' '      | |
 | Y     '"'      8\  d888888P""""""Y88b \ /"|          Y - .8  |Y     ' '      | |
 \\     ."-".    |// 888888P' '_   \_ 'Y  J  |'-)        |-'88  \'    _.--._    |_'
  '-    -----'   |'  888888P -'"    \".|   |  " ___      | 888   '|   ''  -      |8
