@@ -1,0 +1,30 @@
+body {
+    background-color: #0f172a;
+    color: #cbd5e1;
+    font-family: monospace;
+    margin: 0;
+    padding: 20px;
+}
+pre {
+    color: #38bdf8;
+}
+.intro {
+    margin: 10px 0;
+}
+#terminal {
+    margin-top: 20px;
+}
+.prompt {
+    color: #f87171;
+}
+input {
+    background: none;
+    border: none;
+    color: #cbd5e1;
+    font-family: monospace;
+    font-size: 1em;
+    width: 80%;
+}
+input:focus {
+    outline: none;
+}
