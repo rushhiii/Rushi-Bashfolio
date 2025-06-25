@@ -11,14 +11,30 @@ function getKernelInfo() {
     return navigator.userAgent;
 }
 
+// const pageLoadTime = Date.now();
+// function getUptime() {
+//     const seconds = Math.floor((Date.now() - pageLoadTime) / 1000);
+//     const days = Math.floor(seconds / (3600*24));
+//     const hours = Math.floor((seconds % (3600*24)) / 3600);
+//     const mins = Math.floor((seconds % 3600) / 60);
+//     return `${days} day${days!==1?'s':''}; ${hours} hour${hours!==1?'s':''}; ${mins} min${mins!==1?'s':''}`;
+// }
+
+function getKernelInfo() {
+    return "Linux 5.10.0";
+}
+function getShellInfo() {
+    return "Bash 5.0";
+}
+
 // Get uptime since page load
 const pageLoadTime = Date.now();
 function getUptime() {
     const seconds = Math.floor((Date.now() - pageLoadTime) / 1000);
     const days = Math.floor(seconds / (3600*24));
     const hours = Math.floor((seconds % (3600*24)) / 3600);
-    const mins = Math.floor((seconds % 3600) / 60);
-    return `${days} day${days!==1?'s':''}; ${hours} hour${hours!==1?'s':''}; ${mins} min${mins!==1?'s':''}`;
+    // Only show days and hours for a cleaner look
+    return `${days} day${days!==1?'s':''}; ${hours} hour${hours!==1?'s':''}`;
 }
 
 whois = [
@@ -107,7 +123,7 @@ banner = [
 ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚══════╝
                                                                         © ${(new Date()).getFullYear()}
 =================================================================================
-<a style="color: #ffffff">System Information: Kernel: ${getKernelInfo()}; Uptime: ${getUptime()}; Shell: Bash 5.0</a>
+<a style="color: #ffffff">System Information: Kernel: ${getKernelInfo()}; Uptime: ${getUptime()}; Shell: ${getShellInfo()}</a>
 =================================================================================
 <a style="color: #ffffff">WSL2 system v.19.04.2005 * All rights reserved!</a>
 =================================================================================
