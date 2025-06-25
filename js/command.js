@@ -35,7 +35,7 @@ function getUptime() {
     const days = Math.floor(seconds / (3600*24));
     const hours = Math.floor((seconds % (3600*24)) / 3600);
     // Only show days and hours for a cleaner look
-    return `${days} day${days!==1?'s':''}; ${hours} hour${hours!==1?'s':''}`;
+    return `${days} day${days<1?'':'s'}; ${hours} hour${hours<1?'':'s'}`;
 }
 
 whois = [
@@ -110,6 +110,11 @@ help = [
     "<br>"
 ];
 
+
+`
+System Information: Kernel: Linux 5.10.0; Uptime: 0 days; 0 hours; Shell: Bash 5.0
+System Information: Kernel: Linux 5.10.0; Uptime: 1 day; 2 hours; Shell: Bash 5.0
+`
 
 
 banner = [
