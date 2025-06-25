@@ -6,11 +6,6 @@ var github = "https://github.com/rushhiii/";
 var gmail = "mailto:rushiofficial1205@gmail.com";
 var instagram = "https://www.instagram.com/the.tirth12"; 
 
-// Get browser info for "Kernel"
-function getKernelInfo() {
-    return navigator.userAgent;
-}
-
 // const pageLoadTime = Date.now();
 // function getUptime() {
 //     const seconds = Math.floor((Date.now() - pageLoadTime) / 1000);
@@ -20,9 +15,15 @@ function getKernelInfo() {
 //     return `${days} day${days!==1?'s':''}; ${hours} hour${hours!==1?'s':''}; ${mins} min${mins!==1?'s':''}`;
 // }
 
+
+// Get browser info for "Kernel"
 function getKernelInfo() {
-    return "Linux 5.10.0";
+    const ua = navigator.userAgent;
+    const [name, version] = ua.split(" ")[0].split("/");
+    return `${name} ${version}`;
+    // return "Linux 5.10.0";
 }
+
 function getShellInfo() {
     return "Bash 5.0";
 }
