@@ -2,23 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>RUSHI BASHFOLIO</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rushhiii | Terminal-Website</title>
+    <link rel="icon" href="https://app.netlify.com/favicon.ico" type="image/svg+xml" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <style>
+        #liner::before {
+            color: #f9b17a;
+            content: "🗲@Browsercom$~SYSTEM~$rushhiii:~➤ ";
+        }
+    </style>
 </head>
 <body>
-<pre>
-  _____             _     _ 
- |  __ \           (_)   | |
- | |__) |__ _ __ ___ _  __| |
- |  _  // _` / __/ _ \ |/ _` |
- | | \ \ (_| \__ \  __/ | (_| |
- |_|  \_\__,_|___/\___|_|\__,_|
+    <div id="terminal">
+        <a id="before"></a>
+    </div>
+    <div id="command" onclick="document.getElementById('texter').focus();">
+        <textarea
+            type="text"
+            id="texter"
+            onkeyup="typeIt(this, event)"
+            onkeydown="typeIt(this, event); moveIt(this.value.length, event)"
+            onkeypress="typeIt(this, event);"
+            autofocus
+        ></textarea>
+        <div id="liner">
+            <span id="typer"></span><b class="cursor" id="cursor" style="left: 0px"></b>
+        </div>
+    </div>
 
-</pre>
-<p class="intro">Welcome to Rushi's Bashfolio. Type 'help' to explore.</p>
-<div id="terminal">
-  <span class="prompt">@browser~$</span> <input type="text" id="input" autofocus />
-</div>
-<script src="js/commands.js"></script>
+    <script src="js/caret.js"></script>
+    <script src="js/command.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
+
+<!-- MasterJudah -->
