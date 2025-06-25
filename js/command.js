@@ -1,10 +1,10 @@
 var youtube = "https://www.youtube.com/";
 var twitter = "https://www.x.com/";
 var password = "whatdidyouthinkitwasbruh!";
-var linkedIn = "https://www.linkedin.com/in/rushhiii/";
+var linkedIn = "https://www.linkedin.com/in/tirth-patel-52a123343";
 var github = "https://github.com/rushhiii/";
-var gmail = "mailto:rushhiii.dev@gmail.com";
-var instagram = "https://www.instagram.com"; 
+var gmail = "mailto:rushiofficial1205@gmail.com";
+var instagram = "https://www.instagram.com/the.tirth12"; 
 
 // Get browser info for "Kernel"
 function getKernelInfo() {
@@ -99,13 +99,13 @@ banner = [
     "<br>",
     "<pre>" +
     `
-██████╗  ██╗   ██╗ ███████╗██╗  ██╗██╗██████╗  █████╗ ████████╗███████╗██╗     
-██╔══██╗ ██║   ██║ ██╔════╝██║  ██║██║██╔══██╗██╔══██╗╚══██╔══╝██╔════╝██║     
-██████╔╝ ██║   ██║ ███████╗███████║██║██████╔╝███████║   ██║   █████╗  ██║     
-██╔══██╗ ██║   ██║ ╚════██║██╔══██║██║██╔═══╝ ██╔══██║   ██║   ██╔══╝  ██║     
-██║  ██║ ╚██████╔╝ ███████║██║  ██║██║██║     ██║  ██║   ██║   ███████╗███████╗
-╚═╝  ╚═╝  ╚═════╝  ╚══════╝╚═╝  ╚═╝╚═╝╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚══════╝
-                                                                           © ${(new Date()).getFullYear()}
+██████╗ ██╗   ██╗███████╗██╗  ██╗██╗██████╗  █████╗ ████████╗███████╗██╗     
+██╔══██╗██║   ██║██╔════╝██║  ██║██║██╔══██╗██╔══██╗╚══██╔══╝██╔════╝██║     
+██████╔╝██║   ██║███████╗███████║██║██████╔╝███████║   ██║   █████╗  ██║     
+██╔══██╗██║   ██║╚════██║██╔══██║██║██╔═══╝ ██╔══██║   ██║   ██╔══╝  ██║     
+██║  ██║╚██████╔╝███████║██║  ██║██║██║     ██║  ██║   ██║   ███████╗███████╗
+╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚══════╝
+                                                                        © ${(new Date()).getFullYear()}
 =================================================================================
 <a style="color: #ffffff">System Information: Kernel: ${getKernelInfo()}; Uptime: ${getUptime()}; Shell: Bash 5.0</a>
 =================================================================================
