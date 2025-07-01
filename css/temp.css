@@ -1,0 +1,305 @@
+/* Modernized color palette for rushhiii Bashfolio */
+/* #676f9d  (corrected invalid color) */
+/* #424769 */
+/* #2d3250 */
+/* #f9b17a */
+
+* {
+    /* font-family: 'Fira Code', monospace !important; */
+    font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace !important;
+    font-weight: 400;
+    font-size: 12px;
+    font-style: normal;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 15px 20px;
+    min-height: 99%;
+    width: 100%;
+    min-width: 550px;
+    color: #e0e7ef; /* Main text color */
+    background: #181c24; /* Deep blue-black */
+    overflow-x: hidden;
+}
+
+::selection {
+    color: #181c24;
+    background-color: #a6e3a1;
+}
+
+::-moz-selection {
+    color: #181c24;
+    background-color: #a6e3a1;
+}
+
+textarea {
+    left: -1000px;
+    position: absolute;
+}
+
+b {
+    font-weight: bold;
+}
+
+.cursor {
+    font-size: 12px;
+    color: #e0e7ef;
+    background-color: #e0e7ef;
+    position: relative;
+    opacity: 1;
+    height: 1.5em;
+    width: 10px;
+    max-width: 10px;
+    transform: translateY(4px);
+    overflow: hidden;
+    text-indent: -5px;
+    display: inline-block;
+    text-decoration: blink;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+#command {
+    cursor: text;
+    height: 50px;
+    color: #b8c1ec;
+}
+
+#folder {
+    cursor: text;
+    height: 50px;
+    color: #b8c1ec;
+}
+
+#liner {
+    line-height: 1.3rem;
+    margin-top: -2px;
+    animation: show 0.5s ease forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
+    color: #a6e3a1;
+}
+
+#liner.password::before {
+    content: "Password:";
+    color: #f38ba8;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+p {
+    display: block;
+    line-height: 1.3em;
+    margin: 0;
+    overflow: hidden;
+    white-space: normal;
+    letter-spacing: 0.05em;
+    animation: typing 0.5s steps(30, end);
+}
+
+.no-animation {
+    animation: typing 0 steps(30, end);
+}
+
+.margin {
+    margin-left: 20px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.index {
+    color: #b8c1ec;
+}
+.color2 {
+    color: #f6c177;
+}
+.command {
+    color: #7dcfff;
+    text-shadow: 0 0 5px #7dcfff;
+}
+.folder {
+    color: #a6e3a1;
+    text-shadow: 0 0 5px #a6e3a1;
+}
+
+.error {
+    color: #f38ba8;
+}
+.while {
+    color: #fff;
+}
+.inherit,
+a {
+    color: #f6c177;
+}
+a {
+    text-decoration: inherit;
+    transition: color 0.2s, background 0.2s;
+}
+a:hover {
+    background: #f6c177;
+    color: #181c24;
+}
+a:focus {
+    outline: 0;
+}
+
+
+/* new============================================================ */
+
+/* Theme C: Academia Dark (Minimal, Brainy, Classy) */
+
+* {
+    font-family: 'Iosevka', 'Recursive Mono', 'Fira Code', monospace !important;
+    font-feature-settings: "liga" 1, "calt" 1;
+    font-weight: 400;
+    font-size: 13px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 15px 20px;
+    min-height: 99%;
+    width: 100%;
+    min-width: 550px;
+    color: #e0e0e0; /* Soft Ivory */
+    background: #121212; /* Obsidian Black */
+    overflow-x: hidden;
+    line-height: 1.7;
+}
+
+::selection {
+    color: #121212;
+    background-color: #81c784;
+}
+
+::-moz-selection {
+    color: #121212;
+    background-color: #81c784;
+}
+
+.cursor {
+    font-size: 13px;
+    color: #e0e0e0;
+    background-color: #e0e0e0;
+}
+
+#command,
+#folder {
+    color: #e0e0e0;
+}
+
+#liner {
+    color: #f9a825; /* Scholar Gold */
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+}
+
+#liner.password::before {
+    color: #f9a825;
+}
+
+.index {
+    color: #81c784;
+}
+.color2 {
+    color: #f9a825;
+}
+.command {
+    color: #81c784; /* Ivy Green */
+    font-weight: bold;
+    text-shadow: 0 0 4px #81c78455;
+}
+.folder {
+    color: #b0bec5;
+    text-shadow: 0 0 3px #b0bec5;
+}
+.error {
+    color: #f38ba8;
+}
+.while {
+    color: #fff;
+}
+.inherit,
+a {
+    color: #81c784;
+}
+a {
+    text-decoration: underline;
+    transition: color 0.2s, background 0.2s;
+}
+a:hover {
+    background: #f9a825;
+    color: #121212;
+}
+a:focus {
+    outline: 0;
+}
+
+/* Descriptions */
+.description,
+.command-desc,
+.desc {
+    color: #b0bec5; /* Pale Slate */
+}
+
+/* Section Dividers */
+hr, .divider {
+    border: none;
+    border-top: 2px solid #263238;
+    margin: 16px 0;
+    color: #263238;
+    background: #263238;
+    height: 2px;
+}
+
+/* ASCII Art Title Dual Tone Gradient */
+pre, .ascii-art, .ascii-art-title {
+    font-family: inherit;
+    font-size: 1.1em;
+    line-height: 1.2;
+    margin-bottom: 1em;
+    background: linear-gradient(to bottom, #f9a825 0%, #81c784 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 12px #26323888;
+    letter-spacing: 0.01em;
+}
+
+/* Soft inner shadow for terminal blocks */
+#terminal, #command, pre, .ascii-art-title {
+    box-shadow: 0 0 0 2px #263238, inset 0 0 32px 0 #263238cc;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    pre, .ascii-art-title {
+        font-size: 0.95em;
+    }
+}

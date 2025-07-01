@@ -1,0 +1,168 @@
+/* Modernized color palette for rushhiii Bashfolio */
+/* #676f9d  (corrected invalid color) */
+/* #424769 */
+/* #2d3250 */
+/* #f9b17a */
+
+* {
+    /* font-family: 'Fira Code', monospace !important; */
+    font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace !important;
+    font-weight: 400;
+    font-size: 12px;
+    font-style: normal;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 15px 20px;
+    min-height: 99%;
+    width: 100%;
+    min-width: 550px;
+    color: #e0e7ef; /* Main text color */
+    background: #181c24; /* Deep blue-black */
+    overflow-x: hidden;
+}
+
+::selection {
+    color: #181c24;
+    background-color: #a6e3a1;
+}
+
+::-moz-selection {
+    color: #181c24;
+    background-color: #a6e3a1;
+}
+
+textarea {
+    left: -1000px;
+    position: absolute;
+}
+
+b {
+    font-weight: bold;
+}
+
+.cursor {
+    font-size: 12px;
+    color: #e0e7ef;
+    background-color: #e0e7ef;
+    position: relative;
+    opacity: 1;
+    height: 1.5em;
+    width: 10px;
+    max-width: 10px;
+    transform: translateY(4px);
+    overflow: hidden;
+    text-indent: -5px;
+    display: inline-block;
+    text-decoration: blink;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+#command {
+    cursor: text;
+    height: 50px;
+    color: #b8c1ec;
+}
+
+#folder {
+    cursor: text;
+    height: 50px;
+    color: #b8c1ec;
+}
+
+#liner {
+    line-height: 1.3rem;
+    margin-top: -2px;
+    animation: show 0.5s ease forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
+    color: #a6e3a1;
+}
+
+#liner.password::before {
+    content: "Password:";
+    color: #f38ba8;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+p {
+    display: block;
+    line-height: 1.3em;
+    margin: 0;
+    overflow: hidden;
+    white-space: normal;
+    letter-spacing: 0.05em;
+    animation: typing 0.5s steps(30, end);
+}
+
+.no-animation {
+    animation: typing 0 steps(30, end);
+}
+
+.margin {
+    margin-left: 20px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.index {
+    color: #b8c1ec;
+}
+.color2 {
+    color: #f6c177;
+}
+.command {
+    color: #7dcfff;
+    text-shadow: 0 0 5px #7dcfff;
+}
+.folder {
+    color: #a6e3a1;
+    text-shadow: 0 0 5px #a6e3a1;
+}
+
+.error {
+    color: #f38ba8;
+}
+.while {
+    color: #fff;
+}
+.inherit,
+a {
+    color: #f6c177;
+}
+a {
+    text-decoration: inherit;
+    transition: color 0.2s, background 0.2s;
+}
+a:hover {
+    background: #f6c177;
+    color: #181c24;
+}
+a:focus {
+    outline: 0;
+}

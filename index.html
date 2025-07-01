@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rushhiii | Terminal-Website</title>
     <link rel="icon" href="https://app.netlify.com/favicon.ico" type="image/svg+xml" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/default.css"> -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/aurora.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/espresso.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/green.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/pink.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/b&w.css"> -->
     <style>
         #liner::before {
             color: #f9b17a;
@@ -13,26 +21,25 @@
         }
     </style>
 </head>
+
 <body>
+    <!-- <div class="body-wrap"> -->
     <div id="terminal">
         <a id="before"></a>
     </div>
     <div id="command" onclick="document.getElementById('texter').focus();">
-        <textarea
-            type="text"
-            id="texter"
-            onkeyup="typeIt(this, event)"
-            onkeydown="typeIt(this, event); moveIt(this.value.length, event)"
-            onkeypress="typeIt(this, event);"
-            autofocus
-        ></textarea>
+        <textarea type="text" id="texter" onkeyup="typeIt(this, event)"
+            onkeydown="typeIt(this, event); moveIt(this.value.length, event)" onkeypress="typeIt(this, event);"
+            autofocus></textarea>
         <div id="liner">
             <span id="typer"></span><b class="cursor" id="cursor" style="left: 0px"></b>
         </div>
     </div>
+    <!-- </div> -->
 
     <script src="js/caret.js"></script>
     <script src="js/command.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>

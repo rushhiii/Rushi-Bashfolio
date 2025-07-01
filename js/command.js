@@ -127,12 +127,12 @@ banner = [
 ██╔══██╗██║   ██║╚════██║██╔══██║██║██╔═══╝ ██╔══██║   ██║   ██╔══╝  ██║     
 ██║  ██║╚██████╔╝███████║██║  ██║██║██║     ██║  ██║   ██║   ███████╗███████╗
 ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚══════╝
-                                                                        © ${(new Date()).getFullYear()}
-=================================================================================
+                                                                       © ${(new Date()).getFullYear()}
+===============================================================================
 <a style="color: #ffffff">System Information: Kernel: ${getKernelInfo()}; Uptime: ${getUptime()}; Shell: ${getShellInfo()}</a>
-=================================================================================
+===============================================================================
 <a style="color: #ffffff">WSL2 system v.19.04.2005 * All rights reserved!</a>
-=================================================================================
+===============================================================================
 ` +
 "</pre>",
 '<span class="color2">Welcome to my Bashfolio with an interactive terminal-style website.</span>',
@@ -161,7 +161,7 @@ ossy<a style='color: #ffffff'>NMMMNyMMh</a>ssssssssssssss<a style='color: #fffff
       -+sssssssssssssssssyyyssss+-         Microsoft Corporation Basic Render Dri  Memory: 4311MiB / 3781MiB 
         ':+ssssssssssssssssss+:'           
             .-/+oossssoo+/-.
-                                           <img width="200px" src="palet.png" alt="Color Palette">
+                                           <img width="200px" src="./assets/palet.png" alt="Color Palette">
     ` + "<pre>"
 ];
 
@@ -249,7 +249,7 @@ asciiart = [
     '<span class="command">music</span>             Provides a music ASCII image.',
     '<span class="command">anime</span>             Displays an anime ASCII image.',
     '<span class="command">nature</span>            Displays a nature ASCII image.',
-    '<span class="command">rushhiii</span>       creator of the website',
+    '<span class="command">rushhiii</span>          creator of the website',
     '<span class="command">pubg</span>              Displays ascii pubg banner.',
     '<span class="command">neovim</span>            neovim font.',
     '<span class="command">oops</span>              Mistyped command or error.',
