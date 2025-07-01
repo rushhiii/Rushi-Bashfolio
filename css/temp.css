@@ -1,15 +1,9 @@
-/* Modernized color palette for rushhiii Bashfolio */
-/* #676f9d  (corrected invalid color) */
-/* #424769 */
-/* #2d3250 */
-/* #f9b17a */
+/* Theme: Aurora Terminal (Nature + Futurism) */
 
 * {
-    /* font-family: 'Fira Code', monospace !important; */
-    font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace !important;
+    font-family: 'Fira Code', 'IBM Plex Mono', monospace !important;
     font-weight: 400;
-    font-size: 12px;
-    font-style: normal;
+    font-size: 13px;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -20,35 +14,246 @@ body {
     padding: 15px 20px;
     min-height: 99%;
     width: 100%;
+    min-height: 100vh;
     min-width: 550px;
-    color: #e0e7ef; /* Main text color */
-    background: #181c24; /* Deep blue-black */
+    color: #d0e7f9;
+    /* Light Ice Blue */
+    background: linear-gradient(180deg, #0b0c10 0%, #232946 100%);
     overflow-x: hidden;
 }
 
 ::selection {
-    color: #181c24;
-    background-color: #a6e3a1;
+    color: #BD93F900;
+    background-color: #8be9fd;
 }
 
 ::-moz-selection {
-    color: #181c24;
-    background-color: #a6e3a1;
+    color: #bd93f9;
+    background-color: #8be9fd;
 }
 
+.cursor {
+    font-size: 13px;
+    color: #d0e7f9;
+    background-color: #d0e7f9;
+}
+
+#command,
+#folder {
+    color: #d0e7f9;
+}
+
+#liner {
+    color: #9fffb3;
+    /* Electric Mint */
+}
+
+#liner.password::before {
+    color: #bd93f9;
+    /* Aurora Purple */
+}
+
+.index {
+    color: #bd93f9;
+}
+
+.color2 {
+    color: #9fffb3;
+}
+
+.command {
+    color: #bd93f9;
+    /* Aurora Purple */
+    font-weight: bold;
+    text-shadow: 0 0 4px #bd93f988;
+}
+
+.folder {
+    color: #8be9fd;
+    text-shadow: 0 0 4px #8be9fd;
+}
+
+.error {
+    color: #ff5555;
+}
+
+.while {
+    color: #fff;
+}
+
+.inherit,
+a {
+    color: #8be9fd;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.2s, background 0.2s;
+}
+
+a:hover {
+    background: #BD93F992;
+    color: #0b0c10;
+}
+
+a:focus {
+    outline: 0;
+}
+
+/* Descriptions */
+.description,
+.command-desc,
+.desc {
+    color: #8be9fd;
+    /* Gentle Cyan */
+}
+
+/* Section Dividers */
+hr,
+.divider {
+    border: none;
+    border-top: 2px solid #4c566a;
+    margin: 16px 0;
+    color: #4c566a;
+    background: #4c566a;
+    height: 2px;
+}
+
+/* ASCII Art Title Aurora Gradient */
+pre,
+.ascii-art,
+.ascii-art-title {
+    font-family: inherit;
+    font-size: 1.1em;
+    line-height: 1.15;
+    margin-bottom: 1em;
+    background: linear-gradient(to bottom, #bd93f9 0%, #9fffb3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 12px #23294688;
+    letter-spacing: 0.01em;
+}
+
+/* Soft inner shadow for terminal blocks */
+#terminal,
+#command,
+pre,
+.ascii-art-title {
+    /* box-shadow: 0 0 0 2px #232946, inset 0 0 32px 0 #232946cc; */
+
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+
+    pre,
+    .ascii-art-title {
+        font-size: 0.95em;
+    }
+}
+
+/* ======= Modern Terminal Theme: Tokyo Night Inspired ======= */
+body {
+    /* box-shadow: 0 0 0 2px #232946, inset 0 0 32px 0 #232946cc; */
+
+    background-color: #1a1b26;
+    /* Deep Night Blue */
+    color: #c0caf5;
+    /* Soft Light Blue */
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* ========== Text & Prompt ========== */
+.prompt {
+    color: #7aa2f7;
+    /* Sky Blue */
+    font-weight: bold;
+    text-shadow: 0 0 3px #24283b;
+}
+
+.command {
+    color: #bb9af7;
+    /* Soft Purple */
+    font-weight: 600;
+    text-shadow: 0 0 3px #24283b;
+}
+
+.description {
+    color: #a9b1d6;
+    /* Muted Blue-Gray */
+}
+
+a {
+    color: #7dcfff;
+    /* Aqua Blue */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff9e64;
+    /* Orange on hover */
+    text-decoration: none;
+}
+
+/* ========== ASCII Art Banner ========== */
+.ascii-art {
+    background: linear-gradient(to right, #bb9af7, #7dcfff, #7aa2f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* ========== Section Dividers ========== */
+.divider {
+    border-top: 1px solid #414868;
+    /* Subtle Indigo */
+    margin: 10px 0;
+}
+
+/* ========== Highlighted Commands in Help List ========== */
+.highlight {
+    color: #7dcfff;
+    font-weight: bold;
+}
+
+/* ========== Terminal Style Enhancements ========== */
+.terminal-line {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* Optional subtle glow effect */
+.command,
+.prompt {
+    text-shadow: 0 0 6px #7aa2f7aa;
+}
+
+/* Selection */
+::selection {
+    color: #1a1b26;
+    background-color: #7AA2F790;
+}
+
+::-moz-selection {
+    color: #1a1b26;
+    background-color: #7aa2f7;
+}
+
+/* Cursor and textarea (keep your logic) */
 textarea {
     left: -1000px;
     position: absolute;
 }
 
-b {
-    font-weight: bold;
-}
-
 .cursor {
-    font-size: 12px;
-    color: #e0e7ef;
-    background-color: #e0e7ef;
+    font-size: 16px;
+    color: #c0caf5;
+    background-color: #c0caf5;
     position: relative;
     opacity: 1;
     height: 1.5em;
@@ -58,7 +263,6 @@ b {
     overflow: hidden;
     text-indent: -5px;
     display: inline-block;
-    text-decoration: blink;
     animation: blinker 1s linear infinite;
 }
 
@@ -68,238 +272,23 @@ b {
     }
 }
 
-#command {
-    cursor: text;
-    height: 50px;
-    color: #b8c1ec;
-}
-
-#folder {
-    cursor: text;
-    height: 50px;
-    color: #b8c1ec;
-}
-
-#liner {
-    line-height: 1.3rem;
-    margin-top: -2px;
-    animation: show 0.5s ease forwards;
-    animation-delay: 1.2s;
-    opacity: 0;
-    color: #a6e3a1;
-}
-
+/* Password prompt */
 #liner.password::before {
     content: "Password:";
-    color: #f38ba8;
+    color: #f7768e;
+    /* Rose Red */
 }
 
-@keyframes show {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-p {
-    display: block;
-    line-height: 1.3em;
-    margin: 0;
-    overflow: hidden;
-    white-space: normal;
-    letter-spacing: 0.05em;
-    animation: typing 0.5s steps(30, end);
-}
-
-.no-animation {
-    animation: typing 0 steps(30, end);
+/* Miscellaneous */
+b {
+    font-weight: bold;
 }
 
 .margin {
     margin-left: 20px;
 }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-.index {
-    color: #b8c1ec;
-}
-.color2 {
-    color: #f6c177;
-}
-.command {
-    color: #7dcfff;
-    text-shadow: 0 0 5px #7dcfff;
-}
-.folder {
-    color: #a6e3a1;
-    text-shadow: 0 0 5px #a6e3a1;
-}
-
-.error {
-    color: #f38ba8;
-}
-.while {
-    color: #fff;
-}
-.inherit,
-a {
-    color: #f6c177;
-}
-a {
-    text-decoration: inherit;
-    transition: color 0.2s, background 0.2s;
-}
-a:hover {
-    background: #f6c177;
-    color: #181c24;
-}
-a:focus {
-    outline: 0;
-}
-
-
-/* new============================================================ */
-
-/* Theme C: Academia Dark (Minimal, Brainy, Classy) */
-
-* {
-    font-family: 'Iosevka', 'Recursive Mono', 'Fira Code', monospace !important;
-    font-feature-settings: "liga" 1, "calt" 1;
-    font-weight: 400;
-    font-size: 13px;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    margin: 0;
-    padding: 15px 20px;
-    min-height: 99%;
-    width: 100%;
-    min-width: 550px;
-    color: #e0e0e0; /* Soft Ivory */
-    background: #121212; /* Obsidian Black */
-    overflow-x: hidden;
-    line-height: 1.7;
-}
-
-::selection {
-    color: #121212;
-    background-color: #81c784;
-}
-
-::-moz-selection {
-    color: #121212;
-    background-color: #81c784;
-}
-
-.cursor {
-    font-size: 13px;
-    color: #e0e0e0;
-    background-color: #e0e0e0;
-}
-
-#command,
-#folder {
-    color: #e0e0e0;
-}
-
-#liner {
-    color: #f9a825; /* Scholar Gold */
-    line-height: 1.6;
-    letter-spacing: 0.01em;
-}
-
-#liner.password::before {
-    color: #f9a825;
-}
-
-.index {
-    color: #81c784;
-}
-.color2 {
-    color: #f9a825;
-}
-.command {
-    color: #81c784; /* Ivy Green */
-    font-weight: bold;
-    text-shadow: 0 0 4px #81c78455;
-}
-.folder {
-    color: #b0bec5;
-    text-shadow: 0 0 3px #b0bec5;
-}
-.error {
-    color: #f38ba8;
-}
-.while {
-    color: #fff;
-}
-.inherit,
-a {
-    color: #81c784;
-}
-a {
-    text-decoration: underline;
-    transition: color 0.2s, background 0.2s;
-}
-a:hover {
-    background: #f9a825;
-    color: #121212;
-}
-a:focus {
-    outline: 0;
-}
-
-/* Descriptions */
-.description,
-.command-desc,
-.desc {
-    color: #b0bec5; /* Pale Slate */
-}
-
-/* Section Dividers */
-hr, .divider {
-    border: none;
-    border-top: 2px solid #263238;
-    margin: 16px 0;
-    color: #263238;
-    background: #263238;
-    height: 2px;
-}
-
-/* ASCII Art Title Dual Tone Gradient */
-pre, .ascii-art, .ascii-art-title {
-    font-family: inherit;
-    font-size: 1.1em;
-    line-height: 1.2;
-    margin-bottom: 1em;
-    background: linear-gradient(to bottom, #f9a825 0%, #81c784 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 2px 12px #26323888;
-    letter-spacing: 0.01em;
-}
-
-/* Soft inner shadow for terminal blocks */
-#terminal, #command, pre, .ascii-art-title {
-    box-shadow: 0 0 0 2px #263238, inset 0 0 32px 0 #263238cc;
-}
-
-/* Responsive */
-@media (max-width: 700px) {
-    pre, .ascii-art-title {
-        font-size: 0.95em;
-    }
+.divider {
+    border-top: 1px solid #414868;
+    margin: 10px 0;
 }

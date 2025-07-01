@@ -1,9 +1,10 @@
-/* Theme: Aurora Terminal (Nature + Futurism) */
-
 * {
+    /* font-family: 'Fira Code', monospace !important; */
+    /* font-family: 'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace !important; */
     font-family: 'Fira Code', 'IBM Plex Mono', monospace !important;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 12px;
+    font-style: normal;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -12,45 +13,123 @@
 body {
     margin: 0;
     padding: 15px 20px;
-    min-height: 99%;
-    width: 100%;
     min-height: 100vh;
+    width: 100%;
     min-width: 550px;
     color: #d0e7f9;
-    /* Light Ice Blue */
     background: linear-gradient(180deg, #0b0c10 0%, #232946 100%);
+    /* box-shadow: 0 0 0 2px #232946, inset 0 0 32px 0 #232946cc; */
     overflow-x: hidden;
 }
 
 ::selection {
-    color: #BD93F900;
-    background-color: #8be9fd;
+    /* color: #0b0c10;
+    background-color: #B47EFF; */
+    background-color: #BD93F992;
+    color: #0b0c10;
+
 }
 
 ::-moz-selection {
-    color: #bd93f9;
-    background-color: #8be9fd;
+    color: #0b0c10;
+    background-color: #B47EFF;
+}
+
+textarea {
+    left: -1000px;
+    position: absolute;
+}
+
+b {
+    font-weight: bold;
 }
 
 .cursor {
-    font-size: 13px;
+    font-size: 12px;
     color: #d0e7f9;
-    background-color: #d0e7f9;
+    background-color: #e0e7ef;
+    position: relative;
+    opacity: 1;
+    height: 1.5em;
+    width: 10px;
+    max-width: 10px;
+    transform: translateY(4px);
+    overflow: hidden;
+    text-indent: -5px;
+    display: inline-block;
+    text-decoration: blink;
+    animation: blinker 1s linear infinite;
 }
 
-#command,
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+#command {
+    cursor: text;
+    height: 50px;
+    color: #d0e7f9;
+}
+
 #folder {
+    cursor: text;
+    height: 50px;
     color: #d0e7f9;
 }
 
 #liner {
+    line-height: 1.3rem;
+    margin-top: -2px;
+    animation: show 0.5s ease forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
     color: #9fffb3;
-    /* Electric Mint */
 }
 
+/* Aurora Purple */
 #liner.password::before {
+    content: "Password:";
     color: #bd93f9;
-    /* Aurora Purple */
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+p {
+    display: block;
+    line-height: 1.3em;
+    margin: 0;
+    overflow: hidden;
+    white-space: normal;
+    letter-spacing: 0.05em;
+    animation: typing 0.5s steps(30, end);
+}
+
+.no-animation {
+    animation: typing 0 steps(30, end);
+}
+
+.margin {
+    margin-left: 20px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 .index {
@@ -63,18 +142,17 @@ body {
 
 .command {
     color: #bd93f9;
-    /* Aurora Purple */
     font-weight: bold;
-    text-shadow: 0 0 4px #bd93f988;
+    text-shadow: 0 0 5px #bd93f988;
 }
 
 .folder {
     color: #8be9fd;
-    text-shadow: 0 0 4px #8be9fd;
+    text-shadow: 0 0 5px #8be9fd;
 }
 
 .error {
-    color: #ff5555;
+    color: #f38ba8;
 }
 
 .while {
@@ -87,13 +165,14 @@ a {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: inherit;
     transition: color 0.2s, background 0.2s;
 }
 
 a:hover {
-    background: #BD93F992;
+    /* background: #BD93F992; */
     color: #0b0c10;
+    background: #B47EFF81;
 }
 
 a:focus {
@@ -124,24 +203,16 @@ pre,
 .ascii-art,
 .ascii-art-title {
     font-family: inherit;
-    font-size: 1.1em;
-    line-height: 1.15;
     margin-bottom: 1em;
     background: linear-gradient(to bottom, #bd93f9 0%, #9fffb3 100%);
+    /* background: linear-gradient(to right, #bb9af7, #7dcfff, #7aa2f7); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 2px 12px #23294688;
     letter-spacing: 0.01em;
 }
 
-/* Soft inner shadow for terminal blocks */
-#terminal,
-#command,
-pre,
-.ascii-art-title {
-    /* box-shadow: 0 0 0 2px #232946, inset 0 0 32px 0 #232946cc; */
 
-}
 
 /* Responsive */
 @media (max-width: 700px) {
@@ -150,145 +221,4 @@ pre,
     .ascii-art-title {
         font-size: 0.95em;
     }
-}
-
-/* ======= Modern Terminal Theme: Tokyo Night Inspired ======= */
-body {
-    /* box-shadow: 0 0 0 2px #232946, inset 0 0 32px 0 #232946cc; */
-
-    background-color: #1a1b26;
-    /* Deep Night Blue */
-    color: #c0caf5;
-    /* Soft Light Blue */
-    font-family: 'JetBrains Mono', 'Fira Code', monospace;
-    font-size: 16px;
-    line-height: 1.6;
-    padding: 20px;
-}
-
-/* ========== Text & Prompt ========== */
-.prompt {
-    color: #7aa2f7;
-    /* Sky Blue */
-    font-weight: bold;
-    text-shadow: 0 0 3px #24283b;
-}
-
-.command {
-    color: #bb9af7;
-    /* Soft Purple */
-    font-weight: 600;
-    text-shadow: 0 0 3px #24283b;
-}
-
-.description {
-    color: #a9b1d6;
-    /* Muted Blue-Gray */
-}
-
-a {
-    color: #7dcfff;
-    /* Aqua Blue */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #ff9e64;
-    /* Orange on hover */
-    text-decoration: none;
-}
-
-/* ========== ASCII Art Banner ========== */
-.ascii-art {
-    background: linear-gradient(to right, #bb9af7, #7dcfff, #7aa2f7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-/* ========== Section Dividers ========== */
-.divider {
-    border-top: 1px solid #414868;
-    /* Subtle Indigo */
-    margin: 10px 0;
-}
-
-/* ========== Highlighted Commands in Help List ========== */
-.highlight {
-    color: #7dcfff;
-    font-weight: bold;
-}
-
-/* ========== Terminal Style Enhancements ========== */
-.terminal-line {
-    white-space: pre-wrap;
-    word-break: break-word;
-}
-
-/* Optional subtle glow effect */
-.command,
-.prompt {
-    text-shadow: 0 0 6px #7aa2f7aa;
-}
-
-/* Selection */
-::selection {
-    color: #1a1b26;
-    background-color: #7AA2F790;
-}
-
-::-moz-selection {
-    color: #1a1b26;
-    background-color: #7aa2f7;
-}
-
-/* Cursor and textarea (keep your logic) */
-textarea {
-    left: -1000px;
-    position: absolute;
-}
-
-.cursor {
-    font-size: 16px;
-    color: #c0caf5;
-    background-color: #c0caf5;
-    position: relative;
-    opacity: 1;
-    height: 1.5em;
-    width: 10px;
-    max-width: 10px;
-    transform: translateY(4px);
-    overflow: hidden;
-    text-indent: -5px;
-    display: inline-block;
-    animation: blinker 1s linear infinite;
-}
-
-@keyframes blinker {
-    50% {
-        opacity: 0;
-    }
-}
-
-/* Password prompt */
-#liner.password::before {
-    content: "Password:";
-    color: #f7768e;
-    /* Rose Red */
-}
-
-/* Miscellaneous */
-b {
-    font-weight: bold;
-}
-
-.margin {
-    margin-left: 20px;
-}
-
-.divider {
-    border-top: 1px solid #414868;
-    margin: 10px 0;
 }
