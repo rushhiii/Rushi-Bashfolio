@@ -245,8 +245,8 @@ neofetch = [
                                       :@@@-                         .:%@@*.        
                                       :@@@-                             =@@=       
                                        @@@#.                                       
-   <a>bezehel@k.@rushhiii</a>          .@@@*.                                      
-   ------------------------------       .@@@@.                                     
+   <a>bezehel@k.@rushhiii</a>                 .@@@*.                                      
+   --------------------                .@@@@.                                     
    OS: Kali GNU/Linux Rolling x86_64     .*@@@@@-                                  
    Kernel: 6.9.0-kali1-amd64                :@@@@@@@@@@@*:..                       
    Uptime: 7 hours, 12 minutes                  .-#@@@@@@@@@@@@@@@+:.              
