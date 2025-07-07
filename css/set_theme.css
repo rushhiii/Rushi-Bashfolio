@@ -1,0 +1,71 @@
+/* Theme Switcher Floating Panel - Collapsible */
+#theme-switcher {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 9999;
+  align-items: flex-end;
+}
+
+.theme-box {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #0008;
+  position: relative;
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.theme-box:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 16px #000a;
+}
+
+.theme-box span {
+  position: absolute;
+  right: 110%;
+  top: 50%;
+  transform: translateY(-50%) translateX(20px);
+  background: rgba(30,30,30,0.97);
+  color: #fff;
+  padding: 4px 14px;
+  border-radius: 6px;
+  font-size: 1em;
+  font-family: inherit;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: opacity 0.3s, transform 0.3s;
+  box-shadow: 0 2px 8px #0007;
+  letter-spacing: 0.04em;
+}
+
+.theme-box:hover span {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* Hide all but the active theme unless hovered */
+#theme-switcher:not(:hover) .theme-box {
+  display: none;
+}
+#theme-switcher .theme-box.active {
+  display: flex;
+}
+
+/* When hovered, show all theme boxes */
+#theme-switcher:hover .theme-box {
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+}

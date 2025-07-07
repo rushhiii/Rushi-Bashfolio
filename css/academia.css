@@ -171,7 +171,7 @@ a {
 a:hover {
     /* 81c784 */
     /* background: #FFB742A1;  */
-    background: #51FF5A8F; 
+    background: #51FF5A8F;
     color: #121212;
 }
 
@@ -225,7 +225,61 @@ pre,
 @media (max-width: 700px) {
 
     pre,
-    .ascii-art-title {
+    ascii-art-title {
         font-size: 0.95em;
+        /* overflow-x: none;
+        word-break:normal;
+        white-space: none; */
+        overflow-x: auto;
+        word-break: break-word;
+        white-space: pre-wrap;
+
+    }
+
+    body {
+        padding: 2vw 1vw;
+        font-size: 0.95em;
+        min-width: 0;
+    }
+
+    #terminal,
+    #command {
+        padding: 0 2vw;
+        font-size: 0.95em;
+    }
+
+    pre,
+    .ascii-art-title {
+        font-size: 0.85em;
+        word-break: break-word;
+    }
+
+    #liner,
+    #typer,
+    .prompt {
+        font-size: 0.95em;
+    }
+
+    textarea {
+        font-size: 0.95em;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.85em;
+        padding: 1vw 0.5vw;
+    }
+
+    #terminal,
+    #command {
+        padding: 0 1vw;
+        font-size: 0.85em;
+    }
+
+    pre,
+    .ascii-art-title {
+        font-size: 0.75em;
     }
 }

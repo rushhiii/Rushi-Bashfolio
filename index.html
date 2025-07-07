@@ -8,7 +8,9 @@
     <link rel="icon" href="https://app.netlify.com/favicon.ico" type="image/svg+xml" />
     <!-- <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/default.css"> -->
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/aurora.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/set_theme.css">
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/aurora.css"> -->
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/espresso.css"> -->
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/green.css"> -->
@@ -37,9 +39,57 @@
     </div>
     <!-- </div> -->
 
+    <!-- Theme Switcher -->
+    <div id="theme-switcher">
+        <div class="theme-box" data-theme="aurora.css" style="background:#232946" title="Aurora"><span>Aurora</span></div>
+        <div class="theme-box" data-theme="espresso.css" style="background:#1e1e1e" title="Espresso"><span>Espresso</span></div>
+        <div class="theme-box" data-theme="green.css" style="background:#003300" title="Matrix"><span>Matrix</span></div>
+        <div class="theme-box" data-theme="pink.css" style="background:#ff79c6" title="Synthwave"><span>Synthwave</span></div>
+        <div class="theme-box" data-theme="b&w.css" style="background:#181c24" title="B&W"><span>B&amp;W</span></div>
+        <div class="theme-box" data-theme="academia.css" style="background:#121212" title="Academia"><span>Academia</span></div>
+        <div class="theme-box" data-theme="default.css" style="background:#1c213f" title="Default"><span>Default</span></div>
+    </div>
+
     <script src="js/caret.js"></script>
     <script src="js/command.js"></script>
     <script src="js/main.js"></script>
+    <script>
+  // Theme Switcher Logic
+  const themeBoxes = document.querySelectorAll('#theme-switcher .theme-box');
+  const themeLink = document.querySelector('link[rel=stylesheet][href^="css/"]');
+
+  function setActiveThemeBox(theme) {
+    themeBoxes.forEach(box => {
+      if (box.getAttribute('data-theme') === theme) {
+        box.classList.add('active');
+      } else {
+        box.classList.remove('active');
+      }
+    });
+  }
+
+  themeBoxes.forEach(box => {
+    box.addEventListener('click', () => {
+      const theme = box.getAttribute('data-theme');
+      if (themeLink) {
+        themeLink.setAttribute('href', 'css/' + theme);
+        localStorage.setItem('selectedTheme', theme);
+        setActiveThemeBox(theme);
+      }
+    });
+  });
+
+  // On load, restore theme if saved
+  const savedTheme = localStorage.getItem('selectedTheme');
+  if (savedTheme && themeLink) {
+    themeLink.setAttribute('href', 'css/' + savedTheme);
+    setActiveThemeBox(savedTheme);
+  } else {
+    // Default: set active to current loaded theme
+    const currentTheme = themeLink.getAttribute('href').replace('css/', '');
+    setActiveThemeBox(currentTheme);
+  }
+</script>
 </body>
 
 </html>
