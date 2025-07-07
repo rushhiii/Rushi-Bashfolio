@@ -51,13 +51,13 @@ Inspired by Unix shells and Bash prompts, this site simulates a fully interactiv
 rushi-bashfolio/
 ├── index.html        # Main terminal UI
 ├── css/
-│   └── style.css     # All styling and animations
+│   └── style.css     # All themes files
 ├── js/
 │   ├── main.js       # Command handling and animation
 │   ├── command.js    # Command output logic
 │   └── caret.js      # Terminal caret blink effect
 └── .gitignore        # Excludes oldJunk/ and other folders
-````
+```
 
 
 ## 📦 Deployment
@@ -68,6 +68,13 @@ This site is deployed via **[Netlify](https://www.netlify.com/)**. To deploy you
 2. Connect to Netlify
 3. Deploy from `main` branch
 4. Done!
+
+**Or deploy via [GitHub Pages](https://pages.github.com/):**
+
+1. Fork this repo
+2. Go to your repo's **Settings > Pages**
+3. Set the source branch to `main` (or `master`) and root folder
+4. Save and visit your GitHub
 
 
 ## 📄 License
