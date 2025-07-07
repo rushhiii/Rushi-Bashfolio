@@ -11,15 +11,14 @@
 [![Netlify Status](https://camo.githubusercontent.com/a6145c4b94f8e4789628a467c2072924522a99dccc4ffb354f208f03684ad63c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6e65746c6966792d737563636573732d627269676874677265656e2e737667
 )](https://rushi-bashfolio.netlify.app) -->
 
-
-
-
 A **terminal-style portfolio website** built entirely using HTML, CSS, and vanilla JavaScript.  
 Inspired by Unix shells and Bash prompts, this site simulates a fully interactive CLI interface where visitors can run commands to learn more about me — like `whoami`, `projects`, `socials`, `email`, and more.
 
 <!-- 🔗 **Live Demo:** [rushi-bashfolio.netlify.app](https://rushi-bashfolio.netlify.app) -->
 
 🔗 <b>Live Demo:</b> <a href="https://rushi-bashfolio.netlify.app" target="_blank">rushi-bashfolio.netlify.app</a>
+
+<img src="./assets/themes.gif" width="100%"/>
 
 ## 🚀 Features
 
