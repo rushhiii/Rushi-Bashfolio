@@ -78,6 +78,21 @@ This site is deployed via **[Netlify](https://www.netlify.com/)**. To deploy you
 4. Save and visit your GitHub
 
 
+## 📚 Tutorial
+
+Want to learn how this terminal portfolio works or build your own?  
+Check out the step-by-step tutorial, divided into 6 chapters:
+
+1. [Terminal Core UI](Tutorial/01_terminal_core_ui_.md)
+2. [User Input & Typing Handler](Tutorial/02_user_input___typing_handler_.md)
+3. [Command Interpreter](Tutorial/03_command_interpreter_.md)
+4. [Command Output Data](Tutorial/04_command_output_data_.md)
+5. [Output Rendering Engine](Tutorial/05_output_rendering_engine_.md)
+6. [Theme Management](Tutorial/06_theme_management_.md)
+
+Each chapter covers a key part of the project, from UI to command logic to theming!
+
+
 ## 📄 License
 
 This project is open-sourced under the [MIT License](LICENSE).
