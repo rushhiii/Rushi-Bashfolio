@@ -19,7 +19,7 @@ Inspired by Unix shells and Bash prompts, this site simulates a fully interactiv
 
 <!-- 🔗 **Live Demo:** [rushi-bashfolio.netlify.app](https://rushi-bashfolio.netlify.app) -->
 
-🔗 <b>Live Demo:</b> <a href="https://rushi-bashfolio.netlify.app" target="_new">rushi-bashfolio.netlify.app</a>
+🔗 <b>Live Demo:</b> <a href="https://rushi-bashfolio.netlify.app" target="_blank">rushi-bashfolio.netlify.app</a>
 
 ## 🚀 Features
 
