@@ -81,8 +81,9 @@ This site is deployed via **[Netlify](https://www.netlify.com/)**. To deploy you
 ## 📚 Tutorial
 
 Want to learn how this terminal portfolio works or build your own?  
-Check out the step-by-step tutorial, divided into 6 chapters:
+Check out the step-by-step, divided into 6 chapters:
 
+0. [Overview](./Tutorial/README.md)
 1. [Terminal Core UI](Tutorial/01_terminal_core_ui_.md)
 2. [User Input & Typing Handler](Tutorial/02_user_input___typing_handler_.md)
 3. [Command Interpreter](Tutorial/03_command_interpreter_.md)
