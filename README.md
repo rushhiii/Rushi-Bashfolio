@@ -94,7 +94,7 @@ Check out the step-by-step, divided into 6 chapters:
 Each chapter covers a key part of the project, from UI to command logic to theming!
 
 
-## 📄 License
+## ⚖️ License
 
 This project is open-sourced under the [MIT License](LICENSE).
 
