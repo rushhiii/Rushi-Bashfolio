@@ -17,7 +17,9 @@
 A **terminal-style portfolio website** built entirely using HTML, CSS, and vanilla JavaScript.  
 Inspired by Unix shells and Bash prompts, this site simulates a fully interactive CLI interface where visitors can run commands to learn more about me — like `whoami`, `projects`, `socials`, `email`, and more.
 
-🔗 **Live Demo:** [rushi-bashfolio.netlify.app](https://rushi-bashfolio.netlify.app)
+<!-- 🔗 **Live Demo:** [rushi-bashfolio.netlify.app](https://rushi-bashfolio.netlify.app) -->
+
+🔗 <b>Live Demo:</b> <a src="https://rushi-bashfolio.netlify.app" target="_new">rushi-bashfolio.netlify.app</a>
 
 ## 🚀 Features
 
