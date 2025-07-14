@@ -18,7 +18,7 @@ A **terminal-style portfolio website** built entirely using HTML, CSS, and vanil
 </div>
 
 >[!IMPORTANT]
->## 🖥️ Terminal Portfolio Features
+>## ✯ Terminal Portfolio Features
 >The Terminal Portfolio (Bashfolio) simulates a real Unix terminal experience with authentic command-line interface, interactive commands, realistic typing animations, and multiple color themes. It showcases modern web development techniques while providing a unique, retro computing experience that stands out from traditional portfolio websites.
 
 ### Technologies Used
@@ -47,7 +47,7 @@ Modern hosting platforms provide seamless deployment with features like automati
 <a href="https://pages.github.com/">
   <img src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/github.png" width="50" height="50" alt="GitHub Pages"></a>
 
-### Terminal Features
+### 🖥️ Terminal Features
 This repository features authentic terminal emulation with command history, tab completion, multiple color themes, realistic typing effects, and responsive design. It includes ASCII art display, system information commands, social media integration, and interactive command processing with error handling.
 
 <br>
