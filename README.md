@@ -1,4 +1,4 @@
-[![Banner](./assets/themes.gif)](https://rushi-bashfolio.netlify.app)
+[![Banner](./assets/repo_banner.png)](https://github.com/rushhiii/bashfolio)
 
 <h1>⚡ Terminal Portfolio - Bashfolio</h1>
 
@@ -154,6 +154,7 @@ This repository features authentic terminal emulation with command history, tab 
   - CSS3 animations and transitions
   - HTML5 semantic structure
 
+[![preview](./assets/themes.gif)](https://rushi-bashfolio.netlify.app)
 <p>
  This terminal portfolio project showcases authentic command-line interface simulation using pure web technologies. The website features realistic terminal behavior, interactive commands, and multiple themes that demonstrate advanced CSS and JavaScript skills. Perfect for developers who want to create a unique, memorable portfolio experience.
  <br>
@@ -666,4 +667,4 @@ We welcome contributions! Here's how you can help:
 
 #
 
-<p align="center">by <strong>@rushhiii</strong> ⚡</p>
+<p align="center">by <strong>@rushhiii</strong></p>
