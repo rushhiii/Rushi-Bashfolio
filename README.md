@@ -55,7 +55,7 @@ This repository features authentic terminal emulation with command history, tab 
 
 
 >[!IMPORTANT]
->## �️ Terminal Commands & Features
+>## Terminal Commands & Features
 >**Interactive Command Line Interface** — Experience authentic terminal interaction with a comprehensive set of commands. This terminal portfolio demonstrates real-world command-line functionality with modern web technologies, combining the power of HTML5, CSS3, and vanilla JavaScript for an immersive CLI experience.
 
 ### 🔥 Available Commands
@@ -666,4 +666,4 @@ We welcome contributions! Here's how you can help:
 
 #
 
-<p align="center"> ⚡ Terminal Portfolio by <strong>@rushhiii</strong> ⚡</p>
+<p align="center">by <strong>@rushhiii</strong> ⚡</p>
