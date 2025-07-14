@@ -1,4 +1,4 @@
-[![Banner](./assets/repo_banner_!.png)](https://github.com/rushhiii/bashfolio)
+[![Banner](./assets/repo_banner_1.png)](https://github.com/rushhiii/bashfolio)
 
 <h1>⚡ Terminal Portfolio - Bashfolio</h1>
 
