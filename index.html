@@ -7,15 +7,15 @@
     <title>rushhiii | Terminal-Website</title>
     <link rel="icon" href="https://app.netlify.com/favicon.ico" type="image/svg+xml" />
     <!-- <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/default.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"> -->
-    <link rel="stylesheet" type="text/css" media="screen" href="css/aurora.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/set_theme.css">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/aurora.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/espresso.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/green.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/pink.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/b&w.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/default.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css"> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/aurora.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/set_theme.css">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/aurora.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/espresso.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/green.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/pink.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/b&w.css"> -->
     <style>
         #liner::before {
             /* color: #f9b17a; */
@@ -50,13 +50,13 @@
         <div class="theme-box" data-theme="default.css" style="background:#1c213f" title="Default"><span>Default</span></div>
     </div>
 
-    <script src="js/caret.js"></script>
-    <script src="js/command.js"></script>
-    <script src="js/main.js"></script>
+    <script src="./assets/js/caret.js"></script>
+    <script src="./assets/js/command.js"></script>
+    <script src="./assets/js/main.js"></script>
     <script>
   // Theme Switcher Logic
   const themeBoxes = document.querySelectorAll('#theme-switcher .theme-box');
-  const themeLink = document.querySelector('link[rel=stylesheet][href^="css/"]');
+  const themeLink = document.querySelector('link[rel=stylesheet][href^="./assets/css/"]');
 
   function setActiveThemeBox(theme) {
     themeBoxes.forEach(box => {
@@ -72,7 +72,7 @@
     box.addEventListener('click', () => {
       const theme = box.getAttribute('data-theme');
       if (themeLink) {
-        themeLink.setAttribute('href', 'css/' + theme);
+        themeLink.setAttribute('href', './assets/css/' + theme);
         localStorage.setItem('selectedTheme', theme);
         setActiveThemeBox(theme);
       }
@@ -82,11 +82,11 @@
   // On load, restore theme if saved
   const savedTheme = localStorage.getItem('selectedTheme');
   if (savedTheme && themeLink) {
-    themeLink.setAttribute('href', 'css/' + savedTheme);
+    themeLink.setAttribute('href', './assets/css/' + savedTheme);
     setActiveThemeBox(savedTheme);
   } else {
     // Default: set active to current loaded theme
-    const currentTheme = themeLink.getAttribute('href').replace('css/', '');
+    const currentTheme = themeLink.getAttribute('href').replace('./assets/css/', '');
     setActiveThemeBox(currentTheme);
   }
 </script>
