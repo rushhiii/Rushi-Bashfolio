@@ -8,7 +8,8 @@ A **terminal-style portfolio website** built entirely using HTML, CSS, and vanil
 
 </h4>
 
-<a href="https://rushi-bashfolio.netlify.app" target="_blank"><img src="https://img.shields.io/badge/Live_Demo-Terminal_Portfolio-00C851?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Terminal Portfolio"></a> <a href="https://github.com/rushhiii/Website-Portfolio" target="_blank"><img src="https://img.shields.io/badge/Modern_Portfolio-View_Repo-2E3440?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repository"></a>
+<a href="https://app.netlify.com/projects/rushii-portfolio/deploys" target="_blank"><img src="https://img.shields.io/netlify/365f64ea-82f2-476a-8b3b-0b2067105c22?style=for-the-badge&logo=netlify&logoColor=white" alt="Netlify Deploy Status"></a>
+<a href="https://rushi-bashfolio.netlify.app" target="_blank"><img src="https://img.shields.io/badge/Live_Demo-Terminal_Portfolio-2E3440?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Terminal Portfolio"></a> <a href="https://github.com/rushhiii/Website-Portfolio" target="_blank"><img src="https://img.shields.io/badge/Modern_Portfolio-View_Repo-4285F4?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repository"></a>
 
 
 <div>
